@@ -13,14 +13,14 @@ const AUTO_ACCESS = process.env.AUTO_ACCESS || false; // `false` disables automa
 const FILE_PATH = process.env.FILE_PATH || './tmp';   // Running directory, directory where sub-node files are saved
 const SUB_PATH = process.env.SUB_PATH || 'sub';       // Subscription path
 const PORT = process.env.SERVER_PORT || process.env.PORT || 3000;        // HTTP service subscription port
-const UUID = process.env.UUID || '85569784-37ad-476a-a6c3-acafa591a164'; // When using Nezha v1, you need to modify the UUID to run it on different platforms; otherwise, it will be overwritten.
+const UUID = process.env.UUID || '3127bb88-362a-4fc0-877c-1c4ec911481d'; // When using Nezha v1, you need to modify the UUID to run it on different platforms; otherwise, it will be overwritten.
 const NEZHA_SERVER = process.env.NEZHA_SERVER || '';        // Nezha v1 input format: nz.abc.com:8008 Nezha v0 input format: nz.abc.com
 const NEZHA_PORT = process.env.NEZHA_PORT || '';            // Please leave blank if using Nezha v1; Nezha v0 requires fields.
 const NEZHA_KEY = process.env.NEZHA_KEY || '';              // NZ_CLIENT_SECRET for Nezha v1 or agent key for Nezha v0
 const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'rai.mhvpn.cc.cd';          // A fixed tunnel domain name can be left blank to activate a temporary tunnel.
 const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiNGVmOTdlODc2OWNlZTllMzM1OWI3NzlkZmU4MDgzOGYiLCJ0IjoiYzdkYmIzNTEtYjA4OS00NjA2LWI5NmMtZDAxYzVlODZkZjRkIiwicyI6IlpUY3hNR05sTURRdFlXRTVOeTAwWVdZd0xUZzVaVFF0WlRJeE4yWmpNR1ptTURKayJ9';              // A fixed tunnel key (JSON or token) is required. Leaving it blank will enable a temporary tunnel. The JSON key can be obtained from: https://json.zone.id
 const ARGO_PORT = process.env.ARGO_PORT || 8072;            //For fixed tunnel ports, the token settings in the Cloudflare backend must match those here.
-const CFIP = process.env.CFIP || 'www.wto.org';        // Preferred domain name or preferred IP address for node  
+const CFIP = process.env.CFIP || 'mhvpn.netlify.app';        // Preferred domain name or preferred IP address for node  
 const CFPORT = process.env.CFPORT || 443;                   // The node's preferred domain name or preferred IP address corresponds to the port.
 const NAME = process.env.NAME || '';                        // Node Name
 
